@@ -1,0 +1,5 @@
+﻿Condizioni di compilazione
+	Qualsiasi versione di Visual Studio 2013 con supporto NUnit
+
+Esecuzione programma dalla shell di windows
+	Copiare il contenuto della cartella "bin/release" sotto la cartella 

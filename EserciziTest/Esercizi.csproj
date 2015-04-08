@@ -47,9 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\EserciziTest.exe.config" />
+    <None Include="bin\Debug\EserciziTest.vshost.exe.config" />
+    <None Include="bin\Debug\EserciziTest.vshost.exe.manifest" />
+    <None Include="bin\Release\EserciziTest.exe.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Eseguibili\" />
+    <Content Include="bin\Debug\EserciziTest.exe" />
+    <Content Include="bin\Debug\EserciziTest.pdb" />
+    <Content Include="bin\Debug\EserciziTest.vshost.exe" />
+    <Content Include="bin\Release\EserciziTest.exe" />
+    <Content Include="bin\Release\EserciziTest.pdb" />
+    <Content Include="Guida.txt" />
+    <Content Include="Problems.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
