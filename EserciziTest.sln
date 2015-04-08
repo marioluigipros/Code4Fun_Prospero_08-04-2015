@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziTest", "EserciziTest\EserciziTest.csproj", "{86157778-43FF-438D-A417-BF193F720AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziTests", "EserciziTests\EserciziTests.csproj", "{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3E465529-E9C3-46F0-94E9-1A73A8167F5D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86157778-43FF-438D-A417-BF193F720AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86157778-43FF-438D-A417-BF193F720AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86157778-43FF-438D-A417-BF193F720AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86157778-43FF-438D-A417-BF193F720AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
