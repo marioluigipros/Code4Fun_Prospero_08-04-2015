@@ -10,6 +10,9 @@ namespace Esercizi
     {
         static void Main(string[] args)
         {
+            Esercizi esercizi = new Esercizi();
+            int[] vect=new int[2]{2,3};
+            esercizi.SommaMultipliNnumeriMinoriDi(vect,10);
         }
     }
 }
