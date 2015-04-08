@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziTest", "EserciziTest\EserciziTest.csproj", "{86157778-43FF-438D-A417-BF193F720AC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esercizi", "EserciziTest\Esercizi.csproj", "{86157778-43FF-438D-A417-BF193F720AC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziTests", "EserciziTests\EserciziTests.csproj", "{FB23389F-AF6F-443F-8A0C-EE7DDAF10692}"
 EndProject

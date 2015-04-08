@@ -7,7 +7,7 @@
     <ProjectGuid>{86157778-43FF-438D-A417-BF193F720AC0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EserciziTest</RootNamespace>
+    <RootNamespace>Esercizi</RootNamespace>
     <AssemblyName>EserciziTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
