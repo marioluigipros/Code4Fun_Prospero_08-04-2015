@@ -9,22 +9,22 @@ namespace Esercizi
     public class Esercizi
     {
         int[] MultiplesAtStepN;
-        int[] MultiplesOfnNumberFinished;
+        int[] MultiplesOfNthNumberFinished;
         public int FakeSeed = 0;
         public decimal MakeSumOfMultiples(int[] numbers, int limit)
         {
             int vectorLength = numbers.Length;
-            MultiplesAtStepN = new int[vectorLength];
-            int noMoreMultiples = vectorLength;
+            MultiplesAtStepN = new int[vectorLength];          
             bool bException = false;
             
             int partialSum = 0;
             int globalSum = 0;
 
-            MultiplesOfnNumberFinished = new int[vectorLength];
+            //questo array mi segnala se i multipli del numero n-esimo sono finiti così da non sommarli
+            MultiplesOfNthNumberFinished = new int[vectorLength];
             for (int i = 0; i < vectorLength; i++)
             {
-                MultiplesOfnNumberFinished[i] = 0;    
+                MultiplesOfNthNumberFinished[i] = 0;    
             }
             
 
@@ -33,6 +33,7 @@ namespace Esercizi
                 MultiplesAtStepN[i] = numbers[i];   
             }
 
+            //eccezione possibile per numeri molto grandi che eccedono la dimensione di un intero
             try
             {
                 while (!CheckMultiplesAreFinished())
@@ -42,7 +43,7 @@ namespace Esercizi
                         if (MultiplesAtStepN[i] < limit)
                             partialSum += MultiplesAtStepN[i];
                         else
-                            MultiplesOfnNumberFinished[i] = 1;
+                            MultiplesOfNthNumberFinished[i] = 1;
                     }
 
 
@@ -79,12 +80,12 @@ namespace Esercizi
         {
             int sum=0;
 
-            for (int i = 0; i < MultiplesOfnNumberFinished.Length; i++)
+            for (int i = 0; i < MultiplesOfNthNumberFinished.Length; i++)
             {
-                sum += MultiplesOfnNumberFinished[i];      
+                sum += MultiplesOfNthNumberFinished[i];      
             }
 
-            if (sum == MultiplesOfnNumberFinished.Length)
+            if (sum == MultiplesOfNthNumberFinished.Length)
                 return true;
             return false;
         }
@@ -96,10 +97,11 @@ namespace Esercizi
 
             Random rand = new Random();        
 
-            
+            //il numero random viene impostato in modo fisso per eseguire i tests. quando vedo che il valore FakeSeed è maggiore di zero lo forzo
             int seed = FakeSeed > 0 ? FakeSeed: rand.Next(1,vectorLength);
 
            
+            //ogni numero da 1 a n viene posizionato spostandolo verso destra con eventuale rotazione
             for (int i = 1; i <= vectorLength; i++)
             {               
 

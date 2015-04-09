@@ -1,5 +1,29 @@
-﻿Condizioni di compilazione
-	Qualsiasi versione di Visual Studio 2013 con supporto NUnit
+﻿CONDIZIONI DI COMPILAZIONE
+Qualsiasi versione di Visual Studio 2013 con supporto NUnit
 
-Esecuzione programma dalla shell di windows
-	Copiare il contenuto della cartella "bin/release" sotto la cartella 
+ESECUZIONE PROGRAMMA DALLA SHELL DI WINDOWS
+Copiare il contenuto della cartella "bin/release" in una posizione comoda sul disco ed eseguire EserciziTest.exe
+
+ESECUZIONE DEGLI ESERCIZI
+Avviando il programma senza parametri si esegue automaticamente il primo esercizio e la procedura dovrebbe scrivere a video:
+"La somma dei multipli di 3 e 5 è: 266333". se invece si passa come parametro tra un numero tra virgolette come ad esempio "3" o "5"
+il programma stamperà a video una permutazione di n numeri in base essendo n il numero passato come parametro. 
+
+IMPLEMENTAZIONE
+Le 2 funzioni sono implementate come metodi della classe esercizi. La prima funzione è un algoritmo generale per ottenere la somma dei multipli di n numeri
+minori di un certo limite. in input passo il vettore dei numeri e il valore limite.
+
+La seconda funzione riceve in input un numero intero ed effettua la creazione e scrittura di un array di n interi 
+compilandolo con una permutazione degli n numeri ottenuta partendo da un numero random tra 1 ed n.
+a partire da questo numero si esegue uno shift verso destra della posizione naturale di ciascun numero da 1 ad n con rotazione 
+dei numeri per cui numero random + n > limite del vettore.
+
+TESTS
+Il test del primo algoritmo viene fatto tramite 2 funzioni di controllo di cui la prima calcola la somma dei multipli di 2 e 3 minori di 10 confrontandola con il valore 38 
+e la seconda esegue lo stesso test sui dati del problema confrontando il risultato dell'algoritmo generale con la somma diretta eseguita in una funzione a parte.
+
+Il test del secondo algoritmo viene effettuato verificando che ogni vettore (caso di test 5) ottenuto attraverso un random da 1 a 5 verifichi le 2 condizioni:
+1) Nessun numero ripetuto
+2) I 5 vettori sono diversi
+
+ 	 
